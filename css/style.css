@@ -1,0 +1,84 @@
+body{
+    height: 200vh;
+}
+.bg-myNav{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+.home{
+    background-image: url('../images/intro-bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.homeLayer{
+
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+
+}
+.layerContent{
+
+    color: white;
+    text-align: center;
+
+}
+h1{
+    font-size: 65px;
+}
+.typingClass::after{
+    content: "";
+    animation-name: typingSkill;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typingSkill{
+
+    0%{ content: "|"; }
+
+    2% { content: "D|"; }
+    4% { content: "De|"; }
+    6% { content: "Dev|"; }
+    8% { content: "Deve|"; }
+    10% { content: "Devel|"; }
+    12% { content: "Develo|"; }
+    14% { content: "Develop|"; }
+    16% { content: "Develope|"; }
+    18% { content: "Developer|"; }
+    30% { content: "Develope|"; }
+    30% { content: "Develop|"; }
+
+    100%{  }
+
+}
+
+.carouselPart{
+    background-image: url('../images/overlay-bg.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.carousleLayer{
+    background-color: rgba(0, 0, 255, 0.6);
+
+}
+.carousel-indicators{
+    top: 100%;
+}
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
